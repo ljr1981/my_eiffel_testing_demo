@@ -11,4 +11,4 @@ and the testing cluster, taking note how the cluster has isolated the *_TEST_SET
 
 ![AutoTest Tool](/docs/testing_002.png)
 
-Find the AutoTest tool in clicking the ![AutoTest Tool Tab](https://www.eiffel.org/doc/eiffelstudio/AutoTest).
+Find the AutoTest tool in clicking the [AutoTest Tool Tab](https://www.eiffel.org/doc/eiffelstudio/AutoTest).
