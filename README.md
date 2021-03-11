@@ -14,7 +14,7 @@ and the testing cluster, taking note how the cluster has isolated the *_TEST_SET
 Find the AutoTest tool in clicking the [AutoTest Tool Tab](https://www.eiffel.org/doc/eiffelstudio/AutoTest).
 
 ### AutoTest Toolbar
-The toolbar at the top will have three tools of interest:
+The toolbar at the top will have three ![tools](/docs/autotest_toolbar_tools.png) of interest:
 
 * Create new test
 * Run selected tests
