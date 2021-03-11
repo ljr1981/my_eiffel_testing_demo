@@ -11,7 +11,7 @@ feature -- Test routines
 
 	dummy_test
 		do
-			
+			assert ("force_failure_by_setting_false", False)
 		end
 
 note
