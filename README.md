@@ -49,3 +49,17 @@ In contrast, we can select three tests and run them together as a group. See ill
 
 ![Running just three tests](/docs/autotest_isolate_3_tests_to_run.png)
 
+#### Results Node
+We will skip over the coverage node and get back to it later. The more important next topic is the Results node.
+
+In the example illustration below, you will see that the dummy_test has been coded to fail on-purpose. We can see the overall results of our test-runs in the Results node.
+
+![The Overall Test-run Results](/docs/autotest_results_with_pass_and_fail.png)
+
+Pay special attention to a number of items:
+
+* The tag of the "assert" in dummy_test is seen in the "status" column of the Results list.
+* The tag also appears in the Outputs list, which shows the results of each test as it executes and finishes.
+* Finally, it is also seen in the lower-half of the AutoTest tool, which also shows results.
+
+The important thing to remember is that the "tag" that you put in any "assert" feature call will be used in this way to describe which precise assertion failed. This is why it is important to use unique tag-strings in your assertions. Doing so will allow you to search through your TEST_SET class and find the exact assertion that failed.
