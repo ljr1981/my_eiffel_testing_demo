@@ -82,4 +82,13 @@ This is okay. We know it failed. But we really do not easily understand why it f
 Using the second "assert_integers_equal" allows us to see an expected value vs an actual value, which tells a very fast story about what is wrong and how to fix it.
 
 ## TDD vs Design-by-Contract
-![TDD vs DbC](/docs/tdd_vs_dbc.png)
+![TDD vs DbC](/docs/tdd_vs_dbc_with_assertions.png)
+
+Compare lines #31-37 vs line #40. The multiple lines of 31-37 demonstrate what one must do to prove the correct use of the call to "compute_value_version_1". This works for testing-purposes, but the knowledge of usage-correctness is not baked into the production code. It is all in the test code.
+
+Now compare line #40 with lines #51-60. The test code contains a single call to "compute_value_version_2" and the correctness asssertion rules are baked right into the routine method in such a way that any caller to this method will invoke and exercise the correctness rules. Therefore, integration testing of other units (class methods) will always exercise these correctness rules no matter what. This means you write far less test code and your production code carries its correctness rules within itself.
+
+![DbC](/docs/dbc_being_itself.png)
+
+Again—all of the correctness rules are baked right into the unit (method routine) itself. No need for further testing assertions other than a call to the method to run it with some data. Moreover, we do not need to run our method with abnormal data because the rules are rather clear. The only time we create such tests is when we are trying to prove that our DbC assertions are built correctly.
+
