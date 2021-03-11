@@ -33,4 +33,5 @@ The AutoTest Tool presents itself by sections in a treeview. These sections are:
 
 #### Class Node
 ![AutoTest Tool](/docs/autotest_class_test_classes.png)
+
 Here we see each test class and the identified test routines. You can click these individually or in groups to run them as you see fit.
