@@ -18,7 +18,7 @@ feature -- Test routines
 			-- A demonstration of choosing various assertion calls.
 		do
 			assert ("okay_but_non_optimal", 1 = 1)					-- No feedback.
-			assert_integers_equal ("better", 1, 2)					-- Run and look at the Outputs
+			assert_integers_equal ("better", 1, 1)					-- Run and look at the Outputs
 		end
 
 	TDD_vs_Design_by_Contract
