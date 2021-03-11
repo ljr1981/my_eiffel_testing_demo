@@ -93,3 +93,7 @@ Now compare line #40 with lines #51-60. The test code contains a single call to 
 ![DbC](/docs/dbc_being_itself.png)
 
 Again—all of the correctness rules are baked right into the unit (method routine) itself. No need for further testing assertions other than a call to the method to run it with some data. Moreover, we do not need to run our method with abnormal data because the rules are rather clear. The only time we create such tests is when we are trying to prove that our DbC assertions are built correctly.
+
+Below is a side-by-side comparison to help illustrate the limitations of just TDD alone. However, TDD combined with DbC becomes a "lethal-to-bugs" combination!
+
+![Side by side](/docs/side_by_side.png)
