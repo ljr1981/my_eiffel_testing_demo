@@ -8,5 +8,5 @@ See the ![Groups Tool](https://www.eiffel.org/doc/eiffelstudio/Groups_tool)
 and the testing cluster, taking note how the cluster has isolated the *_TEST_SET* classes.
 
 ## AutoTest Tool
+![AutoTest Tab](/docs/testing_002.png)
 Find the AutoTest tool in the ![AutoTest Tab](/https://www.eiffel.org/doc/eiffelstudio/AutoTest).
-![AutoTest Tab](/docs/testing_002.png).
