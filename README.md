@@ -40,3 +40,12 @@ The AutoTest Tool presents itself by sections in a treeview. These sections are:
 ![AutoTest Tool](/docs/autotest_class_test_classes.png)
 
 Here we see each test class and the identified test routines. You can click these individually or in groups to run them as you see fit.
+
+For example: We want to run all test routines in all test classes, so all we have to do is select the "class" root node and then click "Run". See illustration below:
+
+![Running all tests routines in all classes](/docs/autotest_run_all_test_routines_in_all_classes.png)
+
+In contrast, we can select three tests and run them together as a group. See illustration below:
+
+![Running just three tests](/docs/autotest_isolate_3_tests_to_run.png)
+
