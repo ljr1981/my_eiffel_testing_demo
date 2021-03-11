@@ -7,6 +7,11 @@ The overall project universe is seen in the Groups-tool.
 See the ![Groups Tool](https://www.eiffel.org/doc/eiffelstudio/Groups_tool)
 and the testing cluster, taking note how the cluster has isolated the *_TEST_SET* classes.
 
+### Libraries
+Of brief interest to note is the list of libraries. Because the current target (test target) inherits (or extends) its parent, it includes all of the library references of the parent plus its one addition of the testing library. However, in the presentation of the project in the Groups Tool, you do not see this distinction—only the combined library list available to this target from itself and all of its parent targets.
+
+The diff library is included because it is needed by the TEST_SET_SUPPORT class. Otherwise, additional libraries have been added for demo purposes only. For example: The time library is added to demonstrate testing with time and date objects. The same is true for the decimal library and fixed-decimal-width numbers in testing (vs INTEGER, REAL, and NATURAL).
+
 ## AutoTest Tool
 
 ![AutoTest Tool](/docs/testing_002.png)
