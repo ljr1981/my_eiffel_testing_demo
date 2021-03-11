@@ -82,4 +82,5 @@ This is okay. We know it failed. But we really do not easily understand why it f
 Using the second "assert_integers_equal" allows us to see an expected value vs an actual value, which tells a very fast story about what is wrong and how to fix it.
 
 ## TDD vs Design-by-Contract
-![TDD vs DbC](/docs/tdd_vs_dbc.png)
+![TDD vs DbC](/docs/tdd_vs_dbc_with_assertions.png)
+
