@@ -24,12 +24,20 @@ feature -- Test routines
 	TDD_vs_Design_by_Contract
 			-- A demo of how DbC is better than TDD
 			-- and how TDD facilitates DbC!
+		local
+			a, b, l_result: INTEGER
 		do
 				-- The following passes, but it doesn't tell the Correctness Rules.
-			assert_integers_equal ("non_dbc", 10, compute_value_version_1 (5, 5))
+			a := -5; b := 5
+			assert ("a_negative", a <= 0)
+			assert ("b_positive", b >= 0)
+			l_result := compute_value_version_1 (a, b)
+			assert ("in_range", (-100 |..| 100).has (l_result))
+
+			assert_integers_equal ("non_dbc", 0, l_result)
 
 				-- Now, let's add some rules in a new feature (below)
-			assert_integers_equal ("with_dbc", 10, compute_value_version_2 (5, 5))
+			assert_integers_equal ("with_dbc", 0, compute_value_version_2 (-5, 5))
 		end
 
 feature {NONE} -- TDD vs DbC Support Features
