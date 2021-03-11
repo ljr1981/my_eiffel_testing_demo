@@ -45,3 +45,7 @@ For example: We want to run all test routines in all test classes, so all we hav
 
 ![Running all tests routines in all classes](/docs/autotest_run_all_test_routines_in_all_classes.png)
 
+In contrast, we can select three tests and run them together as a group. See illustration below:
+
+![Running just three tests](/docs/autotest_isolate_3_tests_to_run.png)
+
