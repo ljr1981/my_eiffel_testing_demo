@@ -21,3 +21,4 @@ The toolbar at the top will have four tool ![tools](/docs/autotest_toolbar_tools
 * Run selected tests (debug mode)
 * Stop all test related tasks
 
+Clicking *Create new test* for the first time will prompt you to include the Testing library in the current Target if not already included. Just answer "yes" to include it. This step is handled for you in this demostration project.
