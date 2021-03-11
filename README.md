@@ -5,3 +5,4 @@ Demonstration of the Eiffel Studio IDE AutoTest TEST_SET classes and features.
 The overall project universe is seen in the Groups-tool.
 ![GitHub Logo](/docs/testing_001_modified.png)
 Format: ![Groups Tool](https://www.eiffel.org/doc/eiffelstudio/Groups_tool)
+For testing, take note of the cluster named "testing", which (in this case) has isolated the *_TEST_SET* classes.
