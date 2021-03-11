@@ -63,3 +63,19 @@ Pay special attention to a number of items:
 * Finally, it is also seen in the lower-half of the AutoTest tool, which also shows results.
 
 The important thing to remember is that the "tag" that you put in any "assert" feature call will be used in this way to describe which precise assertion failed. This is why it is important to use unique tag-strings in your assertions. Doing so will allow you to search through your TEST_SET class and find the exact assertion that failed.
+
+#### Non-Optimal Vs Better Results
+How an assertion fails and reports this failure to you matters a lot. While you can write just about any test assertion with just the "assert" call, the other assertion-features are there to help you see failures in a more meaningful way.
+
+For example: We can write a test like the following:
+
+![Non-optimal-vs-Better](/docs/non_optimal.png)
+Here, we see two assertions. One is non-optimal and the other is better. Why? Understanding this involves looking at the Outputs of each failure.
+
+![Non-optimal-outputs](/docs/non_optimal_output.png)
+This is okay. We know it failed. But we really do not easily understand why it failed.
+
+![Non-optimal-outputs](/docs/better_outputs.png)
+Using the second "assert_integers_equal" allows us to see an expected value vs an actual value, which tells a very fast story about what is wrong and how to fix it.
+
+
