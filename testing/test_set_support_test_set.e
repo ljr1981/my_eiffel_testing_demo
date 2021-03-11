@@ -14,6 +14,13 @@ feature -- Test routines
 			assert ("force_failure_by_setting_false", True)
 		end
 
+	why_this_assert_over_that_assert
+			-- A demonstration of choosing various assertion calls.
+		do
+			assert ("okay_but_non_optimal", 1 = 1)					-- No feedback.
+			assert_integers_equal ("better", 1, 2)					-- Run and look at the Outputs
+		end
+
 note
 
 	inheritance: "[
