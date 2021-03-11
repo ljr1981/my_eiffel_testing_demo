@@ -7,6 +7,8 @@ The overall project universe is seen in the Groups-tool.
 See the ![Groups Tool](https://www.eiffel.org/doc/eiffelstudio/Groups_tool)
 and the testing cluster, taking note how the cluster has isolated the *_TEST_SET* classes.
 
+![ECF Primer](/docs/Eiffel ECF Primer.pdf)
+
 ### Libraries
 Of brief interest to note is the list of libraries. Because the current target (test target) inherits (or extends) its parent, it includes all of the library references of the parent plus its one addition of the testing library. However, in the presentation of the project in the Groups Tool, you do not see this distinction—only the combined library list available to this target from itself and all of its parent targets.
 
@@ -91,4 +93,3 @@ Now compare line #40 with lines #51-60. The test code contains a single call to 
 ![DbC](/docs/dbc_being_itself.png)
 
 Again—all of the correctness rules are baked right into the unit (method routine) itself. No need for further testing assertions other than a call to the method to run it with some data. Moreover, we do not need to run our method with abnormal data because the rules are rather clear. The only time we create such tests is when we are trying to prove that our DbC assertions are built correctly.
-
