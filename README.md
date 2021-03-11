@@ -70,12 +70,15 @@ How an assertion fails and reports this failure to you matters a lot. While you 
 For example: We can write a test like the following:
 
 ![Non-optimal-vs-Better](/docs/non_optimal.png)
+
 Here, we see two assertions. One is non-optimal and the other is better. Why? Understanding this involves looking at the Outputs of each failure.
 
 ![Non-optimal-outputs](/docs/non_optimal_output.png)
+
 This is okay. We know it failed. But we really do not easily understand why it failed.
 
 ![Non-optimal-outputs](/docs/better_outputs.png)
+
 Using the second "assert_integers_equal" allows us to see an expected value vs an actual value, which tells a very fast story about what is wrong and how to fix it.
 
 
