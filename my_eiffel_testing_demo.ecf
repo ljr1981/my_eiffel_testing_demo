@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-21-0 http://www.eiffel.com/developers/xml/configuration-1-21-0.xsd" name="my_eiffel_testing_demo" uuid="07E3708E-296C-42EA-B758-6C2936D2A7A6" library_target="my_eiffel_testing_demo">
-
-    <description>Several points to note about Eiffel ECF projects:
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-21-0 http://www.eiffel.com/developers/xml/configuration-1-21-0.xsd" name="my_eiffel_testing_demo" uuid="07E3708E-296C-42EA-B758-6C2936D2A7A6" library_target="library_target">
+	<description>Several points to note about Eiffel ECF projects:
 1. Every system is a project universe and has a UUID to help prevent naming-clashing. Always ensure the UUID is unique for your system.
 2. Every system consists of one or more targets. See the XML target-tag(s) below.
 3. Every target can be a root off of the system or a child-target of a parent-target. See target-tags with an extends attribute below.
@@ -13,8 +12,7 @@
 9. Cluster-tags define the names of cluster as well as their paths. Subfolders under those paths will be treated as "sub-clusters".
 9b. The recursive=true in the cluster-tag tells the IDE to search continually down the path-tree for classes and files. Otherwise--stop at the root cluster folder.
     </description>
-
-	<target name="my_eiffel_testing_demo">
+	<target name="library_target">
 		<description>This target has production code and excludes test code. See Advanced-Sources-Exclude-rules for more details.</description>
 		<root all_classes="true"/>
 		<file_rule>
@@ -36,12 +34,12 @@
 		<library name="time" location="$ISE_LIBRARY\library\time\time.ecf"/>
 		<cluster name="src" location=".\src\" recursive="true"/>
 	</target>
-	<target name="my_eiffel_testing_demo_tests" extends="my_eiffel_testing_demo">
-        <description>This target includes the testing code by way of include-rules</description>
+	<target name="test" extends="library_target">
+		<description>This target includes the testing code by way of include-rules</description>
 		<root class="APPLICATION" feature="make"/>
-        <file_rule>
-            <include>/testing$</include>
-        </file_rule>
+		<file_rule>
+			<include>/testing$</include>
+		</file_rule>
 		<option warning="warning">
 			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
 		</option>
